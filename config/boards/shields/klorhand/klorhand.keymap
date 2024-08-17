@@ -27,13 +27,13 @@
                 key-positions = <0 1>;
                 bindings = <&kp ESC>;
             };
-			combo_boot {
+/*			combo_boot {
                 timeout-ms = <50>;
                 key-positions = <5 31>;
 				layers = <1 2>;
                 bindings = <&bootloader>;
             };
-/* 			combo_copy {
+ 			combo_copy {
                 timeout-ms = <50>;
                 key-positions = <5 31 24>;
                 bindings = <&bootloader>;
