@@ -92,7 +92,7 @@ label= "BASE"                                                  ;
                 &kp Q      &kp W      &kp E       &kp R       &kp T	          						        &kp Y     &kp U       &kp I       &kp O      &kp P
     &tog GAME   &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F &kp G			  						        &kp H     &hm RSHFT J &hm RCTRL K &hm RALT L &hm RGUI SEMI  &kp SQT
     &tog MEDIA  &kp Z      &kp X      &kp C       &kp V       &kp B			  					            &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH       &kp BSLH
-                         &kp K_COPY  &mo MEDIA K_PASTE  &kp SPACE &mo NUM TAB       &kp RET  &hm K_UNDO BSPC  &mo MEDIA DEL   &ditto_kb
+                         &kp K_COPY  &mo MEDIA K_PASTE  &kp SPACE &mo NUM TAB       &kp RET  &hm K_UNDO BSPC  &mo MEDIA DEL   &kp LCTRL(GRAVE)
                         >;
         };
 		 num_layer {
