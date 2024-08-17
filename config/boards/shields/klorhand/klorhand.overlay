@@ -12,46 +12,59 @@
         wakeup-source;
 
         col-gpios
-            = <&gpio0 4 GPIO_ACTIVE_HIGH>
-            , <&gpio0 5 GPIO_ACTIVE_HIGH>
-            , <&gpio0 6 GPIO_ACTIVE_HIGH>
-            , <&gpio0 7 GPIO_ACTIVE_HIGH>
-            , <&gpio0 8 GPIO_ACTIVE_HIGH>
-            , <&gpio0 9 GPIO_ACTIVE_HIGH>
+            = <&gpio0 16 GPIO_ACTIVE_HIGH>
             , <&gpio0 10 GPIO_ACTIVE_HIGH>
             , <&gpio0 11 GPIO_ACTIVE_HIGH>
+            , <&gpio0 18 GPIO_ACTIVE_HIGH>
+            , <&gpio0 9 GPIO_ACTIVE_HIGH>
+            , <&gpio0 15 GPIO_ACTIVE_HIGH>
             , <&gpio0 20 GPIO_ACTIVE_HIGH>
-            , <&gpio0 21 GPIO_ACTIVE_HIGH>
-            , <&gpio0 22 GPIO_ACTIVE_HIGH>
-            , <&gpio0 26 GPIO_ACTIVE_HIGH>
-            , <&gpio0 27 GPIO_ACTIVE_HIGH>
-            , <&gpio0 28 GPIO_ACTIVE_HIGH>
-            , <&gpio0 29 GPIO_ACTIVE_HIGH>
+            , <&gpio0 19 GPIO_ACTIVE_HIGH>
+            , <&gpio0 6 GPIO_ACTIVE_HIGH>
+            , <&gpio0 4 GPIO_ACTIVE_HIGH>
+            , <&gpio0 3 GPIO_ACTIVE_HIGH>
+            , <&gpio0 1 GPIO_ACTIVE_HIGH>
+            , <&gpio0 2 GPIO_ACTIVE_HIGH>
+            , <&gpio0 7 GPIO_ACTIVE_HIGH>
+            , <&gpio0 8 GPIO_ACTIVE_HIGH>
             , <&gpio0 23 GPIO_ACTIVE_HIGH>
             ;
 
         row-gpios
-            = <&gpio0 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&gpio0 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
 };
+//   GPIOS  4         5         6         7         8         9        10        11        20        21        22        26        27        28        29        23
+//               ┌─────────┬─────────┬─────────┬─────────┬─────────┐                                       ┌─────────┬─────────┬─────────┬─────────┬─────────┐
+// 0             │    Q    │    W    │    F    │    P    │    G    │                                       │    J    │    L    │    U    │    Y    │    ;    │                16
+//     ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                                       ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
+// 1   │   TAB   │    A    │    R    │    S    │    T    │    D    │                                       │    H    │    N    │    E    │    I    │    O    │    "    │      17
+//     ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                                       ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
+// 2   │   DEL   │    Z    │    X    │    C    │    V    │    B    │                                       │    K    │    M    │    ,    │    .    │    /    │    \    │      18
+//     └─────────┴─────────┴─────────┴─────────┼─────────┼─────────┼─────────┬─────────┬┬────────┬─────────┼─────────┼─────────┼─────────┴─────────┴─────────┴─────────┘
+// 3                                           │  CTRL   │  LOWER  │  SPACE  │   ALT   ││CMD/WIN │  ENTER  │  RAISE  │  BSPCE  │                                              19
+//                                             └─────────┴─────────┴─────────┴─────────┘└────────┴─────────┴─────────┴─────────┘
 
-//             ┌─────────┬─────────┬─────────┬─────────┬─────────┐                                       ┌─────────┬─────────┬─────────┬─────────┬─────────┐
-//             │    Q    │    W    │    F    │    P    │    G    │                                       │    J    │    L    │    U    │    Y    │    ;    │   
-//   ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                                       ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
-//   │   TAB   │    A    │    R    │    S    │    T    │    D    │                                       │    H    │    N    │    E    │    I    │    O    │    "    │
-//   ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                                       ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-//   │   DEL   │    Z    │    X    │    C    │    V    │    B    │                                       │    K    │    M    │    ,    │    .    │    /    │    \    │
-//   └─────────┴─────────┴─────────┴─────────┼─────────┼─────────┼─────────┬─────────┬┬────────┬─────────┼─────────┼─────────┼─────────┴─────────┴─────────┴─────────┘
-//                                           │  CTRL   │  LOWER  │  SPACE  │   ALT   ││CMD/WIN │  ENTER  │  RAISE  │  BSPCE  │  
-//                                           └─────────┴─────────┴─────────┴─────────┘└────────┴─────────┴─────────┴─────────┘
+
+//   GPIOS  16        10       11        18         9         15        20        19        6         4         3         1         2         7        8         23
+//               ┌─────────┬─────────┬─────────┬─────────┬─────────┐                                       ┌─────────┬─────────┬─────────┬─────────┬─────────┐
+// 13            │    Q    │    W    │    F    │    P    │    G    │                                       │    J    │    L    │    U    │    Y    │    ;    │                29
+//     ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                                       ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
+// 14  │   TAB   │    A    │    R    │    S    │    T    │    D    │                                       │    H    │    N    │    E    │    I    │    O    │    "    │      28
+//     ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                                       ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
+// 12  │   DEL   │    Z    │    X    │    C    │    V    │    B    │                                       │    K    │    M    │    ,    │    .    │    /    │    \    │      27
+//     └─────────┴─────────┴─────────┴─────────┼─────────┼─────────┼─────────┬─────────┬┬────────┬─────────┼─────────┼─────────┼─────────┴─────────┴─────────┴─────────┘
+// 17                                          │  CTRL   │  LOWER  │  SPACE  │   ALT   ││CMD/WIN │  ENTER  │  RAISE  │  BSPCE  │                                              22
+//                                             └─────────┴─────────┴─────────┴─────────┘└────────┴─────────┴─────────┴─────────┘
+
 
 / {
     /* define kscan node with label `kscan0`... */
