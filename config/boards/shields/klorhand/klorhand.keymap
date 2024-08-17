@@ -26,7 +26,16 @@
 			quick-tap-ms = <200>;
 			require-prior-idle-ms = <125>;
 			bindings = <&to>, <&kp>;
-};
+		};
+		ts: temp_sticky {
+			compatible = "zmk,behavior-hold-tap";
+			#binding-cells = <2>;
+			flavor = "hold-preferred";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <200>;
+			require-prior-idle-ms = <125>;
+			bindings = <&mo>, <&to>;
+		};
 
     };
 
@@ -95,7 +104,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp X>
+                , <&macro_tap &kp Z>
                 , <&macro_release &kp LCTRL>
                 ;
         };
@@ -135,7 +144,7 @@ label= "BASE"                                                  ;
  bindings = <
                 &kp Q      &kp W      &kp E       &kp R       &kp T	          						        &kp Y     &kp U       &kp I       &kp O      &kp P
     &lc 3 ESC   &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F &kp G			  						        &kp H     &hm RSHFT J &hm RCTRL K &hm RALT L &hm RGUI SEMI  &kp SQT
-    &to MEDIA  &kp Z      &kp X      &kp C       &kp V       &kp B			  					            &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH       &kp BSLH
+    &sl 2       &kp Z      &kp X      &kp C       &kp V       &kp B			  					            &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH       &kp BSLH
                          &copy_macro  &paste_macro  &kp SPACE &lt NUM TAB       &kp RET  &kp BSPC  &lt MEDIA DEL   &ditto_kb
                         >;
         };
@@ -150,13 +159,13 @@ label= "NUM"                                                 ;
 //   ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                                        ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
 //   │         │   F10   │    F1   │    F2   │    F3   │  PAUSE  │                                        │ ------- │    1    │    2    │    3    │  ENTER  │         │
 //   └─────────┴─────────┴─────────┴─────────┼─────────┼─────────┼─────────┬─────────┬┬─────────┬─────────┼─────────┼─────────┼─────────┴─────────┴─────────┴─────────┘
-//                                           │         │         │         │         ││         │         │    0    │    .    │  
+//                                           │   COPY  │  PASTE  │  SPACE  │   TAB   ││  ENTER  │  BSPCE  │    0    │    .    │  
 //                                           └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘
  bindings = <
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
             &kp F12    &kp F7    &kp F8    &kp F9   &kp PSCRN                               &kp KP_DIVIDE   &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS
     &trans  &kp F11    &kp F4    &kp F5    &kp F6   &kp SLCK                                &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS    &none
-    &none  &kp F10    &kp F1    &kp F2    &kp F3   &kp PAUSE_BREAK                         &none    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_ENTER      &trans
+    &trans  &kp F10    &kp F1    &kp F2    &kp F3   &kp PAUSE_BREAK                         &none    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_ENTER      &trans
                                            &trans   &trans  &trans  &trans  &trans  &trans  &kp KP_N0  &kp KP_DOT
                         >;
          };
@@ -169,15 +178,15 @@ label= "MEDIA"                                                 ;
 //   ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                                        ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
 //   │         │    (    │    ←    │    ↑    │    →    │    )    │                                        │  PGUP   │    <    │  PLAY   │    >    │   MUTE  │  VOLUP  │
 //   ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                                        ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-//   │  BASE   │    [    │    `    │    ↓    │    _    │    ]    │                                        │  PGDWN  │ ------- │ ------- │ ------- │ ------- │  VOLDWN │
+//   │         │    [    │    `    │    ↓    │    _    │    ]    │                                        │  PGDWN  │ ------- │ ------- │ ------- │ ------- │  VOLDWN │
 //   └─────────┴─────────┴─────────┴─────────┼─────────┼─────────┼─────────┬─────────┬┬─────────┬─────────┼─────────┼─────────┼─────────┴─────────┴─────────┴─────────┘
-//                                           │   ALT   │  CTRL   │  SHIFT  │         ││         │         │  HOME   │   END   │  
+//                                           │   ALT   │  CTRL   │  SHIFT  │   TAB   ││  ENTER  │  BSPCE  │  HOME   │   END   │  
 //                                           └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘
  bindings = <
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
             &kp EXCL    &kp AT     &kp HASH    &kp DLLR    &kp PRCNT                               &kp CARET   &kp AMPS   &kp ASTRK   &kp MINUS     &kp EQUAL
     &trans  &kp LPAR    &kp LEFT   &kp UP      &kp RIGHT   &kp RPAR                                &kp PG_UP   &kp C_PREV &kp C_PP    &kp C_NEXT &kp C_MUTE  &kp C_VOL_UP
-    &to BASE  &kp LBKT    &kp GRAVE  &kp DOWN    &kp UNDER   &kp RBKT                                &kp PG_DN   &none      &none       &none      &none       &kp C_VOL_DN
+    &trans  &kp LBKT    &kp GRAVE  &kp DOWN    &kp UNDER   &kp RBKT                                &kp PG_DN   &none      &none       &none      &none       &kp C_VOL_DN
                                                      &kp LALT   &kp LCTRL  &kp LSHFT  &trans  &trans  &trans  &kp HOME  &kp END  
                         >;
          };
