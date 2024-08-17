@@ -131,9 +131,9 @@ label= "MEDIA"                                                 ;
 //                                           └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘
  bindings = <
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
-            &kp EXCL    &kp AT     &kp HASH    &kp DLLR    &kp PRCNT                               &kp CARET   &kp AMPS   &kp ASTRK  &trans     &trans
-    &trans  &kp LPAR    &kp LEFT   &kp UP      &kp RIGHT   &kp RPAR                                &kp PG_UP   &kp K_PREV &kp K_PP   &kp K_NEXT &kp K_MUTE  &K_VOL_UP
-    &trans  &kp LBKT    &kp GRAVE  &kp DOWN    &kp UNDER   &kp RBKT                                &kp PG_DN   &trans     &K_STOP2   &trans     &trans      &K_VOL_DN
+            &kp EXCL    &kp AT     &kp HASH    &kp DLLR    &kp PRCNT                               &kp CARET   &kp AMPS   &kp ASTRK   &trans     &trans
+    &trans  &kp LPAR    &kp LEFT   &kp UP      &kp RIGHT   &kp RPAR                                &kp PG_UP   &kp K_PREV &kp K_PP    &kp K_NEXT &kp K_MUTE  &kp K_VOL_UP
+    &trans  &kp LBKT    &kp GRAVE  &kp DOWN    &kp UNDER   &kp RBKT                                &kp PG_DN   &trans     &kp K_STOP2 &trans     &trans      &kp K_VOL_DN
                                            &trans   &trans  &trans  &trans  &trans  &trans  &kp KP_DOT  &kp KP_N0  
                         >;
          };
@@ -153,8 +153,8 @@ label= "GAME"                                                 ;
  bindings = <
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
             &kp N1     &kp N2  &kp N3   &kp N4  &kp N5                               &trans  &trans  &trans  &trans  &trans  
-    &trans  &kp LSHFT  &kp A   &kp W    &kp D   &none                                &trans  &trans  &trans  &trans  &trans  &K_VOL_UP
-    &trans  &kp LCTRL  &none   &kp S    &none   &none                                &trans  &trans  &trans  &trans  &trans  &K_VOL_DN
+    &trans  &kp LSHFT  &kp A   &kp W    &kp D   &none                                &trans  &trans  &trans  &trans  &trans  &kp K_VOL_UP
+    &trans  &kp LCTRL  &none   &kp S    &none   &none                                &trans  &trans  &trans  &trans  &trans  &kp K_VOL_DN
                                            &none   &kp LALT  &kp SPACE  &none  &trans  &trans  &trans  &trans  
                         >;
          };
