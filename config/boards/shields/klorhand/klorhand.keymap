@@ -51,7 +51,7 @@
             }; */
     };
 
-/*     macros {
+      macros {
         ditto_kb: ditto_kb {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -61,7 +61,7 @@
                 , <&macro_release &kp LCTRL>
                 ;
         };
-    }; */
+    };
 	
     keymap {
         compatible = "zmk,keymap";
@@ -98,7 +98,7 @@ label= "BASE"                                                  ;
                 &kp Q      &kp W      &kp E       &kp R       &kp T	          						        &kp Y     &kp U       &kp I       &kp O      &kp P
     &tog GAME   &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F &kp G			  						        &kp H     &hm RSHFT J &hm RCTRL K &hm RALT L &hm RGUI SEMI  &kp SQT
     &tog MEDIA  &kp Z      &kp X      &kp C       &kp V       &kp B			  					            &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH       &kp BSLH
-                         &kp K_COPY  &lt MEDIA K_PASTE  &kp SPACE &lt NUM TAB       &kp RET  &kp BSPC  &lt MEDIA DEL   &kp LCTRL(GRAVE)
+                         &kp K_COPY  &lt MEDIA K_PASTE  &kp SPACE &lt NUM TAB       &kp RET  &kp BSPC  &lt MEDIA DEL   &ditto_kb
                         >;
         };
 		 num_layer {
