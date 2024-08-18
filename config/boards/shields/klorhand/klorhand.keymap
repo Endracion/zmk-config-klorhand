@@ -226,5 +226,6 @@ bindings = <
     &to 0       &kp Z      &kp X      &kp C       &kp D       &kp V			  					&kp K     &kp H       &kp COMMA   &kp DOT    &kp FSLH   &kp BSLH
 								&copy_macro  &paste_macro  &kp SPACE &lt NUM TAB  &kp RET  &kp BSPC  &lt MEDIA DEL   &ditto_kb
                         >;
+		};
     };
 };
