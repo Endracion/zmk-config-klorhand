@@ -195,16 +195,16 @@ label= "GAME"                                                 ;
 //   ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                                        ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
 //   │   ESC   │  SHIFT  │    A    │    W    │    D    │    F    │                                        │         │         │         │         │         │  VOLUP  │
 //   ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                                        ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-//   │  ALTAB  │  CRTL   │ ------- │    S    │ ------- │ ------- │                                        │         │         │         │         │         │  VOLDWN │
+//   │ ------- │  CRTL   │ ------- │    S    │    C    │ ------- │                                        │         │         │         │         │         │  VOLDWN │
 //   └─────────┴─────────┴─────────┴─────────┼─────────┼─────────┼─────────┬─────────┬┬─────────┬─────────┼─────────┼─────────┼─────────┴─────────┴─────────┴─────────┘
-//                                           │ ------- │   ALT   │  SPACE  │ ------- ││         │         │         │         │  
+//                                           │ ------- │   ALT   │  SPACE  │   TAB   ││         │         │         │         │  
 //                                           └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘
  bindings = <
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
             &kp N1     &kp N2  &kp N3   &kp N4  &kp N5                               &trans  &trans  &trans  &trans  &trans  
     &lc 0 ESC  &kp LSHFT  &kp A   &kp W    &kp D   &kp F                                &trans  &trans  &trans  &trans  &trans  &kp K_VOL_UP
-    &kp LALT(TAB)  &kp LCTRL  &none   &kp S    &none   &none                                &trans  &trans  &trans  &trans  &trans  &kp K_VOL_DN
-                                           &none   &kp LALT  &kp SPACE  &none  &trans  &trans  &trans  &trans  
+    &none  &kp LCTRL  &none   &kp S    &kp C   &none                                &trans  &trans  &trans  &trans  &trans  &kp K_VOL_DN
+                                           &none   &kp LALT  &kp SPACE  &kp TAB  &trans  &trans  &trans  &trans  
                         >;
          };
          colemak_layer {
