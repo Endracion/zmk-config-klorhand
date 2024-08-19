@@ -70,6 +70,48 @@
 				layers = <1 2>;
                 bindings = <&undo_macro>;
             };
+			combo_shift1 {
+                timeout-ms = <50>;
+                key-positions = <13 14>;
+				layers = <1 2>;
+                bindings = <&LSHFT>;
+            };
+			combo_shift2 {
+                timeout-ms = <50>;
+                key-positions = <17 18>;
+				layers = <1 2>;
+                bindings = <&LSHFT>;
+            };
+			combo_ctrl1 {
+                timeout-ms = <50>;
+                key-positions = <12 14>;
+				layers = <1 2>;
+                bindings = <&LALT>;
+            };
+			combo_ctrl2 {
+                timeout-ms = <50>;
+                key-positions = <17 19>;
+				layers = <1 2>;
+                bindings = <&LALT>;
+            };
+			combo_alt1 {
+                timeout-ms = <50>;
+                key-positions = <11 14>;
+				layers = <1 2>;
+                bindings = <&LCTRL>;
+            };
+			combo_alt1 {
+                timeout-ms = <50>;
+                key-positions = <17 20>;
+				layers = <1 2>;
+                bindings = <&LCTRL>;
+            };
+			combo_super {
+                timeout-ms = <50>;
+                key-positions = <11 12>;
+				layers = <1 2>;
+                bindings = <&LGUI>;
+            };
 /* 			combo_copy {
                 timeout-ms = <50>;
                 key-positions = <5 31 24>;
@@ -159,7 +201,7 @@ label= "BASE"                                                  ;
 //                                           └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘
 bindings = <
 				&kp Q      &kp W      &kp F       &kp P       &kp B	          					&kp J     &kp L       &kp U       &kp Y      &kp SEMI
-    &lc 3 ESC   &hm LGUI A &hm LALT R &hm LCTRL S &hm LSHFT T &kp G			  					&kp M     &hm RSHFT N &hm RCTRL E &hm RALT I &kp O      &kp SQT
+    &lc 3 ESC   &kp A      &kp R      &kp S       &kp T       &kp G			  					&kp M     &kp N       &kp E       &kp I      &kp O      &kp SQT
     &sl 2       &kp Z      &kp X      &kp C       &kp D       &kp V			  					&kp K     &kp H       &kp COMMA   &kp DOT    &kp FSLH   &kp BSLH
 								&copy_macro  &paste_macro  &kp SPACE &lt NUM TAB  &kp RET  &kp BSPC  &lt MEDIA DEL   &ditto_kb
                         >;
