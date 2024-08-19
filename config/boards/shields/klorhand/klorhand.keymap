@@ -100,7 +100,7 @@
 				layers = <1 2>;
                 bindings = <&kp LCTRL>;
             };
-			combo_alt1 {
+			combo_alt2 {
                 timeout-ms = <50>;
                 key-positions = <17 20>;
 				layers = <1 2>;
