@@ -74,43 +74,43 @@
                 timeout-ms = <50>;
                 key-positions = <13 14>;
 				layers = <1 2>;
-                bindings = <&LSHFT>;
+                bindings = <&kp LSHFT>;
             };
 			combo_shift2 {
                 timeout-ms = <50>;
                 key-positions = <17 18>;
 				layers = <1 2>;
-                bindings = <&LSHFT>;
+                bindings = <&kp LSHFT>;
             };
 			combo_ctrl1 {
                 timeout-ms = <50>;
                 key-positions = <12 14>;
 				layers = <1 2>;
-                bindings = <&LALT>;
+                bindings = <&kp LALT>;
             };
 			combo_ctrl2 {
                 timeout-ms = <50>;
                 key-positions = <17 19>;
 				layers = <1 2>;
-                bindings = <&LALT>;
+                bindings = <&kp LALT>;
             };
 			combo_alt1 {
                 timeout-ms = <50>;
                 key-positions = <11 14>;
 				layers = <1 2>;
-                bindings = <&LCTRL>;
+                bindings = <&kp LCTRL>;
             };
 			combo_alt1 {
                 timeout-ms = <50>;
                 key-positions = <17 20>;
 				layers = <1 2>;
-                bindings = <&LCTRL>;
+                bindings = <&kp LCTRL>;
             };
 			combo_super {
                 timeout-ms = <50>;
                 key-positions = <11 12>;
 				layers = <1 2>;
-                bindings = <&LGUI>;
+                bindings = <&kp LGUI>;
             };
 /* 			combo_copy {
                 timeout-ms = <50>;
