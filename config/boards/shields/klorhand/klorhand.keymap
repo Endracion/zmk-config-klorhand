@@ -67,49 +67,49 @@
 			combo_undo {
                 timeout-ms = <50>;
                 key-positions = <34 35>;
-				layers = <1 2>;
+				layers = <0 1 2>;
                 bindings = <&undo_macro>;
             };
 			combo_shift1 {
                 timeout-ms = <50>;
                 key-positions = <13 14>;
-				layers = <1 2>;
+				layers = <0 1 2>;
                 bindings = <&kp LSHFT>;
             };
 			combo_shift2 {
                 timeout-ms = <50>;
                 key-positions = <17 18>;
-				layers = <1 2>;
+				layers = <0 1 2>;
                 bindings = <&kp LSHFT>;
             };
 			combo_ctrl1 {
                 timeout-ms = <50>;
                 key-positions = <12 14>;
-				layers = <1 2>;
+				layers = <0 1 2>;
                 bindings = <&kp LALT>;
             };
 			combo_ctrl2 {
                 timeout-ms = <50>;
                 key-positions = <17 19>;
-				layers = <1 2>;
+				layers = <0 1 2>;
                 bindings = <&kp LALT>;
             };
 			combo_alt1 {
                 timeout-ms = <50>;
                 key-positions = <11 14>;
-				layers = <1 2>;
+				layers = <0 1 2>;
                 bindings = <&kp LCTRL>;
             };
 			combo_alt2 {
                 timeout-ms = <50>;
                 key-positions = <17 20>;
-				layers = <1 2>;
+				layers = <0 1 2>;
                 bindings = <&kp LCTRL>;
             };
 			combo_super {
                 timeout-ms = <50>;
                 key-positions = <11 12>;
-				layers = <1 2>;
+				layers = <0 1 2>;
                 bindings = <&kp LGUI>;
             };
 /* 			combo_copy {
